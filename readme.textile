@@ -4,6 +4,16 @@ Handbreaker is a tool that watches a directory for new video files.
 If a new file is found, handbreaker will convert the file to an iphone compatible one. 
 When the server is enabled, it will also publish an itunes feed for the iphone compatible files.
 
+
+h2. Usage
+
+rake handbreaker:watch to monitor the "in" directory from the config. 
+
+rake handbreaker:server to start a mongrel/webrick server that lists the converted items
+
+rake handbreaker:convert [source] [target (optional)] to convert a video directly. If target is not given, it will use the "out" dir from the config.
+
+
 h2. Todo
 
 * Clean up code
