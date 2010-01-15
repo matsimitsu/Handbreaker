@@ -1,0 +1,11 @@
+:handbrake: 
+  :path: 'c:\handbreaker\bin\HandBrakeCLI.exe'
+
+:folders:
+  :in: 'G:\iphone\in'
+  :out: 'G:\iphone\out'
+
+:server:
+  :port: 3000
+  :host: '0.0.0.0'
+  :environment: 'production'
