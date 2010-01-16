@@ -18,7 +18,7 @@ module Handbreaker
       }.map {|k,v| "--#{k} #{v.inspect}" }.join(' ')
 
       execute "#{self.handbreaker_bin} #{item_options}"
-      File.rename(self.temp_output, self.output)
+      FileUtils.mv (self.temp_output, self.output)
     end
   private
 
